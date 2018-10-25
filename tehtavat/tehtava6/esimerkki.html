@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+
+  const leiviska = prompt('Kuinka monta leiviskää?');
+  const naula = prompt('Kuinka monta naulaa?');
+  const luoti = prompt('Kuinka monta luotia?');
+
+  const luotig = 13.3 * luoti;
+  const naulag = 425.6 * naula;
+  const leiviskag = 8512 * leiviska;
+
+  const summa = Math.floor((luotig + naulag + leiviskag)/ 1000);
+  const grammat = ((luotig + naulag + leiviskag)/ 1000);
+  const grammat2 = ((grammat - summa) * 1000);
+
+  function pyoristys(grammat2) {
+    return Number.parseFloat(grammat2).toFixed(2);
+  }
+
+  console.log('Massa nykymittojen mukaan: ', summa, 'kiloa ja', pyoristys(grammat2), 'grammaa.');
+
+
+</script>
+</body>
+</html>
