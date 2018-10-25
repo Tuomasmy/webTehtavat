@@ -8,16 +8,17 @@
 <script language="JavaScript">
   'use strict';
 
-window.confirm('Lasketaanko neliöjuuri?')
-    switch (true) {
-      case '1':
+const nj = window.confirm('Lasketaanko neliöjuuri?')
+    if (nj) {
         const nj = prompt('Anna luku:');
-        console.log('Neliöjuuri on', Math.sqrt(nj))
-
-
+        document.write('Neliöjuuri on ', Math.sqrt(nj))
     }
-
-
+    else if (true){
+    document.write('Neliöjuurta ei lasketa');
+    }
+if (nj < -1) {
+  document.write('Neliöjuurta ei voi saada negatiivisesta')
+}
 
 </script>
 </body>
