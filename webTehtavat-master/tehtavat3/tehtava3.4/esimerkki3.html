@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  let luku = [];
+  let noppa;
+  let i;
+  let roll = prompt('Anna arpakuutioiden lukumäärä');
+
+  for (i=1; i<=roll; i++) {
+    noppa = Math.floor(Math.random()* 6 + 1);
+    document.write(noppa +'<br>');
+    luku.push(noppa);
+  }
+  document.write('Arpakuutioiden summa = ',(luku.reduce((a,b) => a + b )));
+
+
+</script>
+</body>
+</html>
