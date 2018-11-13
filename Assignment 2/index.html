@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        li[data-foodtype=squishy] {
+            background-color: orange;
+        }
+        li {
+            width: 100px;
+            list-style-type: none;
+            border-style: solid;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+
+</body>
+<script>
+  document.getElementById("berry").style = "background: red;";
+
+  const y = document.getElementsByTagName("li");
+  console.log(y)
+  for (let i = 0; i < y.length; i++) {
+
+  }
+
+
+</script>
+</html>

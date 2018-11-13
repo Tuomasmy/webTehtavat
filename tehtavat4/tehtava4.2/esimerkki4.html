@@ -1,10 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JavaScript-kokeilu</title>
 </head>
 <body>
+<script language="JavaScript">
+    'use strict';
 
+    let maara, taulukko, nmr;
+    maara = prompt("Osallistujien määrä");
+    taulukko = [];
+    nmr = 1;
+    let i;
+    let j;
+
+    for (i=0; i<maara; i++) {
+        taulukko[i] = prompt("Anna nimi");
+    }
+
+    document.write("Osallistujat: <br>");
+    for (j=0; j<maara; j++){
+        document.write(nmr + ". " + taulukko[j] + "<br>");
+        nmr++
+    }
+    document.write("<br>");
+
+</script>
 </body>
 </html>
