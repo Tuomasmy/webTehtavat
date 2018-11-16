@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<img src="http://placekitten.com/600/400" alt="kissa" id="kuva">
+<p class="hide">TEKSTI NÄKYY KUN HIIRI ON KUVAN PÄÄLLÄ.</p>
+<script>
+    const kuva = document.querySelector("img");
+    const text = document.querySelector("p");
+    function hover() {
+        text.setAttribute("class", "show");
+    }
+    function leave(){
+        text.setAttribute("class", "hide");
+    }
+    kuva.addEventListener("mouseenter", hover);
+    kuva.addEventListener("mouseleave", leave);
+
+</script>
+</body>
+</html>
